@@ -215,8 +215,8 @@
   justify-content: center;
 }
 
-.primary-btn,
-.secondary-btn {
+.primary-btn-fea,
+.secondary-btn-fea {
   padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   text-decoration: none;
@@ -225,21 +225,21 @@
   white-space: nowrap;
 }
 
-.primary-btn {
+.primary-btn-fea {
   background-color: white;
   color: #1f2937;
 }
 
-.primary-btn:hover {
+.primary-btn-fea:hover {
   background-color: #f3f4f6;
 }
 
-.secondary-btn {
+.secondary-btn-fea {
   border: 1px solid white;
   color: white;
 }
 
-.secondary-btn:hover {
+.secondary-btn-fea:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -253,9 +253,115 @@
     width: 100%;
   }
 
-  .primary-btn,
-  .secondary-btn {
+  .primary-btn-fea,
+  .secondary-btn-fea {
     padding: 0.75rem 1.25rem;
     font-size: 0.875rem;
+  }
+}
+
+/* Misson Page */
+.mission-section {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.mission-content {
+  padding-right: 2rem;
+}
+
+.mission-title {
+  color: #0a1942;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.mission-text {
+  color: #1f2937;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.mission-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn-mis {
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.secondary-btn-mis {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow {
+  font-size: 1.25rem;
+}
+
+.primary-btn:hover {
+  background-color: #f3f4f6;
+}
+
+.mission-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mission-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .mission-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mission-content {
+    padding-right: 0;
+  }
+
+  .mission-title {
+    font-size: 2rem;
+  }
+
+  .mission-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn-mis,
+  .secondary-btn-mis {
+    text-align: center;
+    justify-content: center;
   }
 }
